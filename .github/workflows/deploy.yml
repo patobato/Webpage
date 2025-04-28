@@ -33,26 +33,26 @@ jobs:
           path: ./public
 
   deploy:
-  needs: build
-  runs-on: ubuntu-latest
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Debugging before deploy
-      run: |
-        echo "Checking Git status"
-        git status
-        echo "Listing git remotes"
-        git remote -v
-        echo "Listing branches"
-        git branch -a
-        echo "Listing all files"
-        ls -la
+      - name: Debugging before deploy
+        run: |
+          echo "Checking Git status"
+          git status
+          echo "Listing git remotes"
+          git remote -v
+          echo "Listing branches"
+          git branch -a
+          echo "Listing all files"
+          ls -la
 
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
