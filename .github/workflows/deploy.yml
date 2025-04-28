@@ -1,14 +1,9 @@
-name: Deploy Zola site to GitHub Pages
+name: Test Zola Installation
 
 on:
   push:
     branches:
       - main
-
-permissions:
-  contents: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,41 +13,10 @@ jobs:
 
       - name: Install Zola
         run: |
-          curl -sL https://github.com/getzola/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz | tar xz -C /usr/local/bin
-          
-      - name: Verify Zola installation
-        run: zola --version
+          curl -sL https://github.com/getzola/zola/releases/download/v0.16.0/zola-v0.16.0-x86_64-unknown-linux-gnu.tar.gz -o zola.tar.gz
+          file zola.tar.gz
+          tar xzvf zola.tar.gz -C /usr/local/bin
+          zola --version
 
-      - name: Build site
+      - name: Build Site
         run: zola build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: zola-site
-          path: ./public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Debugging before deploy
-        run: |
-          echo "Checking Git status"
-          git status
-          echo "Listing git remotes"
-          git remote -v
-          echo "Listing branches"
-          git branch -a
-          echo "Listing all files"
-          ls -la
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
