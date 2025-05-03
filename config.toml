@@ -6,7 +6,7 @@ title = "pat0"
 description = "Web Gallery"
 
 # The default site author.
-author = "pat0"
+author = ""
 
 # The default language; used in feeds.
 default_language = "en"
@@ -74,9 +74,9 @@ social_image = "icons/github.svg"
 name = "pat0"
 bio = "Simple Image Gallery"
 # The URL of avatar.
-avatar_url = "capy.jpg"
+avatar_url = "tky4.jpg"
 # Invert color in dark mode.
-avatar_invert = true
+avatar_invert = false
 
 # The social icons below the profile on the home page.
 # The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
@@ -94,11 +94,11 @@ url = "https://www.instagram.com/alpha_orrery"
 
 # The top menu.
 [[extra.menu]]
-name = "Photography"
+name = "photography"
 url = "$BASE_URL/projects"
 
 [[extra.menu]]
-name = "Paintings"
+name = "paintings"
 url = "$BASE_URL/archive"
 
 # [[extra.menu]]
@@ -106,7 +106,7 @@ url = "$BASE_URL/archive"
 # url = "$BASE_URL/tags"
 
 [[extra.menu]]
-name = "About"
+name = "about"
 url = "$BASE_URL/about"
 
 # The page footer options.
@@ -126,6 +126,6 @@ strict = 1
 reactions_enabled = 0
 emit_metadata = 0
 input_position = "top"
-theme = "light"
+theme = "dark"
 lang = "en"
 loading = "lazy"
