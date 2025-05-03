@@ -74,14 +74,14 @@ social_image = "icons/github.svg"
 name = "pat0"
 bio = "Simple Image Gallery"
 # The URL of avatar.
-avatar_url = "TKY_2934.jpg"
+avatar_url = "capy.jpg"
 # Invert color in dark mode.
 avatar_invert = true
 
 # The social icons below the profile on the home page.
 # The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
 [[extra.profile.social]]
-name = "Insta"
+name = "insta"
 url = "https://www.instagram.com/alpha_orrery"
 
 # [[extra.profile.social]]
