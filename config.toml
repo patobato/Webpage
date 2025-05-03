@@ -20,3 +20,7 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+
+[extra.cover]
+# Path to the cover image
+image = "pat0.com/static/images/TKY_2806.jpg"
