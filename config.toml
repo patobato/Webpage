@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://pat0.com"
 
+title = "pat0 t"
+description = "Project showcase"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -8,14 +11,6 @@ compile_sass = true
 build_search_index = false
 
 theme = "linkita"
-
-[taxonomies]
-categories = []
-tags = []
-
-# The site title.
-# Will be in all page titles.
-title = "pat0"
 
 [markdown]
 # Whether to do syntax highlighting
