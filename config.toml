@@ -17,10 +17,6 @@ tags = []
 # Will be in all page titles.
 title = "pat0"
 
-[extra.cover]
-# Path to the cover image
-image = "https://images.squarespace-cdn.com/content/v1/526197fbe4b0066e9c401d43/e6183ad1-f488-4e8b-924e-7c7744927a18/2024-Panteon+Nacional+Lisboa-intro.jpg?format=2500w"
-
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
