@@ -17,3 +17,11 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+
+[extra.menus]
+sample_header = [
+  { url = "$BASE_URL/toky/", name = "toky" },
+  { url = "$BASE_URL/archive/", name = "Archive", names_i18n = "common_archive" },
+  { url = "$BASE_URL/blog/", name = "Blog" },
+  { url = "$BASE_URL/about/", name = "About", names_i18n = "common_about" },
+]
