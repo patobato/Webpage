@@ -11,7 +11,12 @@ theme = "linkita"
 
 # The site title.
 # Will be in all page titles.
-title = "pat0.com"
+title = "pat0"
+
+[[taxonomies]]
+name = "categories"
+feed = true
+paginate_by = 4
 
 [markdown]
 # Whether to do syntax highlighting
