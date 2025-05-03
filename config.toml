@@ -1,5 +1,6 @@
-title = "pat0"
 base_url = "https://pat0.com"
+title = "pat0"
+description = "Image Gallery"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
