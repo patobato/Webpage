@@ -3,4 +3,4 @@ title = "About"
 path = "about"
 +++
 
-## Hello World
+## visual artist with a focus on analog photography, painting and drawing
