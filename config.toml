@@ -9,9 +9,17 @@ build_search_index = false
 
 theme = "linkita"
 
+[taxonomies]
+categories = []
+tags = []
+
 # The site title.
 # Will be in all page titles.
 title = "pat0"
+
+[extra.cover]
+# Path to the cover image
+image = "https://images.squarespace-cdn.com/content/v1/526197fbe4b0066e9c401d43/e6183ad1-f488-4e8b-924e-7c7744927a18/2024-Panteon+Nacional+Lisboa-intro.jpg?format=2500w"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -20,7 +28,3 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-
-[extra.cover]
-# Path to the cover image
-image = "https://images.squarespace-cdn.com/content/v1/526197fbe4b0066e9c401d43/e6183ad1-f488-4e8b-924e-7c7744927a18/2024-Panteon+Nacional+Lisboa-intro.jpg?format=2500w"
