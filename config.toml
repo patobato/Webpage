@@ -1,6 +1,5 @@
 title = "pat0"
 base_url = "https://pat0.com"
-image = "https://images.squarespace-cdn.com/content/v1/568eea8ed8af1055c06dc9a6/1728025608035-E2SBY0R5EFE86OZHCSN8/image-asset.jpeg?format=2500w"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
