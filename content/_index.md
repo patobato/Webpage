@@ -1,8 +1,4 @@
 +++
-# title = ""
-# description = ""
 sort_by = "date"
-paginate_by = 4
-[extra]
-profile = "your_username"
+paginate_by = 5
 +++
