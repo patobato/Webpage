@@ -10,10 +10,6 @@ build_search_index = false
 
 theme = "linkita"
 
-[extra.cover]
-# Path to the cover image
-image = "TKY_2806.jpg"
-
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
