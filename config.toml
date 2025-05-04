@@ -28,7 +28,7 @@ feed_filenames = ["atom.xml"]
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
 #
-taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
+# taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
 
 # Configuration of the Markdown rendering
 [markdown]
@@ -70,13 +70,13 @@ social_image = "icons/github.svg"
 # header_dark_color = ""
 
 # The profile on home page.
-[extra.profile]
-name = "pat0"
-bio = "Simple Image Gallery"
+# [extra.profile]
+# name = "pat0"
+# bio = "Simple Image Gallery"
 # The URL of avatar.
-avatar_url = "tky4.jpg"
+# avatar_url = "tky4.jpg"
 # Invert color in dark mode.
-avatar_invert = false
+# avatar_invert = false
 
 # The social icons below the profile on the home page.
 # The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
@@ -87,25 +87,16 @@ avatar_invert = false
 # The top menu.
 [[extra.menu]]
 name = "photography"
-url = "$BASE_URL/projects"
+url = "$BASE_URL/pages/photography"
 
 [[extra.menu]]
 name = "paintings"
-url = "$BASE_URL/archive"
+url = "$BASE_URL/pages/paintings"
 
-# [[extra.menu]]
-# name = "Tags"
-# url = "$BASE_URL/tags"
 
 [[extra.menu]]
 name = "about"
 url = "$BASE_URL/about"
-
-# The page footer options.
-[extra.footer]
-since = 2025
-# license = "CC BY-SA 4.0"
-# license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
 
 # The giscus comment options, only available when comment is enabled.
 [extra.giscus]
