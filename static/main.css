@@ -620,7 +620,7 @@ pre table td:nth-of-type(1) {
   left: 50%;
   transform: translateX(-50%);
   margin: 1;
-  max-width: 1200px; /* Ensure images don't exceed the container's width */
+  max-width: 1000px; /* Ensure images don't exceed the container's width */
   max-height: 600px; /* Your desired maximum height */
 }
 
