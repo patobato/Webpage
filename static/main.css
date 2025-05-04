@@ -613,6 +613,18 @@ pre table td:nth-of-type(1) {
           user-select: none;
 }
 
+.prose img {
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1;
+  max-width: 1200px; /* Ensure images don't exceed the container's width */
+  max-height: 600px; /* Your desired maximum height */
+}
+
+
 .prose .footnote-definition {
   display: flex;
 }
